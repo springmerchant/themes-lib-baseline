@@ -1,0 +1,78 @@
+.form {
+
+}
+
+/* Errors */
+
+// Validation error messages
+.form-error-message {
+  color: #fff;
+  background: rgba(red, .5);
+  border-color: red;
+}
+
+// Form inputs that have failed validation
+.form-error {
+  background: rgba(red, .5);
+  border-color: red;
+}
+
+/* Fields -- a wrapper for a lable and input */
+
+.form-field {
+
+}
+
+/* Labels */
+
+// <label class="form-label">
+//   <div class="form-label-text">Label</div>
+//   ... inputs ...
+// </label>
+.form-label {
+  display: block;
+}
+
+.form-label-text {
+  display: inline-block;
+}
+
+/* Inputs */
+
+// text, email, password, search, telephone, tel, number, textarea, select
+.form-input {
+  display: block;
+  border: 1px solid;
+  border-color: inherit;
+  border-radius: 0;
+  box-sizing: border-box;
+
+  &::placeholder {
+    opacity: .8;
+  }
+
+  &:not([type="checkbox"]):not([type="radio"]) {
+    -webkit-appearance: none;
+  }
+}
+
+// Wrapper for checkbox and radio inputs
+// <div class="form-field form-inline">
+//   <label class="form-label">
+//     <span class="form-label-text">Check Me</span>
+//     <input class="form-input" type="checkbox">
+//   </label>
+// </div>
+.form-inline {
+  .form-label,
+  .form-label-text {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    font-weight: normal;
+  }
+
+  .form-input {
+    display: inline-block;
+  }
+}

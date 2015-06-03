@@ -1,0 +1,17 @@
+%clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%font-smoothing {
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}

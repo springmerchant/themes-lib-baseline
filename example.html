@@ -1,0 +1,688 @@
+<!doctype html>
+<html>
+<head>
+  <title>Baseline</title>
+  <style>/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/* Box model -- http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* Links */
+a {
+  text-decoration: none; }
+
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25; }
+
+/* Basic elements */
+img {
+  max-width: 100%; }
+
+ul,
+ol,
+dl {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: outside none; }
+
+ol {
+  list-style: outside decimal; }
+
+hr {
+  height: 2px;
+  border: none; }
+
+blockquote > *:first-child {
+  margin-top: 0; }
+
+blockquote > *:last-child {
+  margin-bottom: 0; }
+
+figure {
+  margin: 0; }
+
+iframe {
+  max-width: 100%;
+  border: none; }
+
+pre {
+  padding: 1em;
+  background: #fafafa; }
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  line-height: normal;
+  border-radius: 0;
+  -webkit-appearance: none; }
+
+.button ~ .button {
+  margin-left: 5px; }
+
+/* Errors */
+.form-error-message {
+  color: #fff;
+  background: rgba(255, 0, 0, 0.5);
+  border-color: red; }
+
+.form-error {
+  background: rgba(255, 0, 0, 0.5);
+  border-color: red; }
+
+/* Fields -- a wrapper for a lable and input */
+/* Labels */
+.form-label {
+  display: block; }
+
+.form-label-text {
+  display: inline-block; }
+
+/* Inputs */
+.form-input {
+  display: block;
+  border: 1px solid;
+  border-color: inherit;
+  border-radius: 0;
+  box-sizing: border-box; }
+  .form-input::placeholder {
+    opacity: .8; }
+  .form-input:not([type="checkbox"]):not([type="radio"]) {
+    -webkit-appearance: none; }
+
+.form-inline .form-label,
+.form-inline .form-label-text {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  font-weight: normal; }
+
+.form-inline .form-input {
+  display: inline-block; }
+
+table {
+  margin: 1em 0;
+  background: transparent;
+  border: 1px solid;
+  border-color: inherit;
+  border-top: none;
+  border-collapse: separate; }
+  table.table-clean {
+    border: none;
+    border-radius: 0; }
+
+td,
+th {
+  border-top: 1px solid;
+  border-top-color: inherit;
+  padding: 20px; }
+  .table-clean td,
+  .table-clean th {
+    border: none; }
+
+th {
+  font-weight: bold; }
+
+td {
+  border-left: 1px solid;
+  border-left-color: inherit; }
+  td:first-child {
+    border-left: none; }
+</style>
+  <style>
+    html {
+      background: #fafafa;
+    }
+
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background: #fff;
+    }
+
+    /* Over-rides */
+
+    hr {
+      background: #f0f0f0;
+    }
+
+    table {
+      border-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Baseline</h1>
+
+  <section>
+    <h2>General</h2>
+    <hr>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+
+    <p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p><a href="">Link</a></p>
+
+    <ul>
+      <li>Unordered List</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <ol>
+      <li>Ordered List</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+
+    <dl>
+      <dt>Definition Term</dt>
+      <dd>Definition</dd>
+
+      <dt>Term 2</dt>
+      <dd>Definition</dd>
+    </dl>
+
+    <blockquote>
+      Blockquote ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>Buttons</h2>
+    <hr>
+    <a class="button">Button</a><a class="button">Do Stuff</a>
+  </section>
+
+  <section>
+    <h2>Tables</h2>
+    <hr>
+
+    <p>Change border colours with:</p>
+    <pre>
+      table {
+        border-color: blue;
+      }
+    </pre>
+
+    <table>
+      <tr>
+        <th>Example</th>
+        <td>Fabel</td>
+        <td>Jail</td>
+        <td>Sale</td>
+      </tr>
+      <tr>
+        <th>Filters</th>
+        <td>Capital City</td>
+        <td>Fancy Rice</td>
+        <td>Cape Iron</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th>Example</th>
+        <th>Fabel</th>
+        <th>Jail</th>
+        <th>Sale</th>
+      </tr>
+      <tr>
+        <td>Filters</td>
+        <td>Capital City</td>
+        <td>Fancy Rice</td>
+        <td>Cape Iron</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Forms</h2>
+    <hr>
+
+    <form class="form">
+      <div class="form-error-message">
+        Form error message
+      </div>
+
+      <h4>Form field</h4>
+
+      <div class="form-field">
+        <label class="form-label">
+          <div class="form-label-text">Input Label</div>
+          <input class="form-input" placeholder="Placeholder">
+        </label>
+      </div>
+
+      <h4>Inline form field</h4>
+
+      <div class="form-field form-inline">
+        <label class="form-label">
+          <div class="form-label-text">Input Label</div>
+          <input class="form-input" placeholder="Placeholder">
+        </label>
+      </div>
+
+      <h4>Checkbox field</h4>
+
+      <div class="form-field form-inline">
+        <label class="form-label">
+          <span class="form-label-text">Check Me</span>
+          <input class="form-input" type="checkbox">
+        </label>
+      </div>
+
+      <h4>Radio field</h4>
+
+      <div class="form-field form-inline">
+        <label class="form-label">
+          <span class="form-label-text">Check Me</span>
+          <input class="form-input" type="radio">
+        </label>
+        <label class="form-label">
+          <span class="form-label-text">Second</span>
+          <input class="form-input" type="radio">
+        </label>
+        <label class="form-label">
+          <span class="form-label-text">Third</span>
+          <input class="form-input" type="radio">
+        </label>
+      </div>
+
+      <h4>Select field</h4>
+
+      <div class="form-field">
+        <label class="form-label">
+          <span class="form-label-text">Options</span>
+            <select class="form-input">
+              <option>Option A</option>
+              <option>Option B</option>
+              <option>Option C</option>
+            </select>
+        </label>
+      </div>
+
+      <h4>Buttons</h4>
+      <input class="button" type="submit" value="Submit">
+      <button class="button">Button</button>
+    </form>
+  </section>
+</body>
+</html>

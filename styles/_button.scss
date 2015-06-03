@@ -1,0 +1,13 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  line-height: normal;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.button ~ .button {
+  margin-left: 5px;
+}

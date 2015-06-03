@@ -1,0 +1,37 @@
+table {
+  margin: 1em 0;
+  background: transparent;
+  border: 1px solid;
+  border-color: inherit;
+  border-top: none;
+  border-collapse: separate;
+
+  &.table-clean {
+    border: none;
+    border-radius: 0;
+  }
+}
+
+td,
+th {
+  border-top: 1px solid;
+  border-top-color: inherit;
+  padding: 20px;
+
+  .table-clean & {
+    border: none;
+  }
+}
+
+th {
+  font-weight: bold;
+}
+
+td {
+  border-left: 1px solid;
+  border-left-color: inherit;
+
+  &:first-child {
+    border-left: none;
+  }
+}
