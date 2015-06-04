@@ -3,6 +3,7 @@
   "description": "A baseline style library.",
   "version": "0.0.2",
   "private": true,
+  "main": false,
   "scripts": {
     "build": "node ./scripts/build.js"
   },
