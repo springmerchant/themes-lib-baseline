@@ -5,7 +5,7 @@ A simple style library for Bigcommerce themes.
 ## Installation
 
 ```
-jspm install --save bc-baseline=bitbucket/pixelunion/bc-baseline
+jspm install --save bc-baseline=bitbucket:pixelunion/bc-baseline
 ```
 
 ## Usage
