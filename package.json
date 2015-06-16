@@ -1,7 +1,7 @@
 {
   "name": "bc-baseline",
   "description": "A baseline style library.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": true,
   "main": false,
   "scripts": {

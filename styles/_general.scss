@@ -1,20 +1,25 @@
-/* Box model -- http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+// scss-lint:disable VariableForProperty ColorVariable
+
+// Box model
+// See: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-/* Links */
+// - Links
 
 a {
   text-decoration: none;
 }
 
-/* Headers */
+// - Headers
 
 h1,
 h2,
@@ -25,7 +30,7 @@ h6 {
   line-height: 1.25;
 }
 
-/* Basic elements */
+// - Basic elements
 
 img {
   max-width: 100%;
@@ -34,8 +39,8 @@ img {
 ul,
 ol,
 dl {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -52,7 +57,7 @@ li {
 
 hr {
   height: 2px;
-  border: none;
+  border: 0;
 }
 
 blockquote {
@@ -71,7 +76,7 @@ figure {
 
 iframe {
   max-width: 100%;
-  border: none;
+  border: 0;
 }
 
 pre {

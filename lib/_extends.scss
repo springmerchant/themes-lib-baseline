@@ -1,25 +1,28 @@
 %clearfix {
   *zoom: 1;
+
   &:before,
   &:after {
     display: table;
     content: "";
   }
+
   &:after {
     clear: both;
   }
 }
 
 %font-smoothing {
-  -moz-osx-font-smoothing: grayscale;
   -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
 
 %show-for-sr {
+  // scss-lint:disable ImportantRule
   position: absolute !important;
-  height: 1px;
   width: 1px;
+  height: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }

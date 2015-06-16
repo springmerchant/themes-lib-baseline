@@ -1,29 +1,31 @@
+// scss-lint:disable VariableForProperty ColorVariable
+
 .form {
 
 }
 
-/* Errors */
+// - Errors
 
 // Validation error messages
 .form-error-message {
   color: #fff;
-  background: rgba(red, .5);
-  border-color: red;
+  background: rgba(#f00,0.5);
+  border-color: #f00;
 }
 
 // Form inputs that have failed validation
 .form-error {
-  background: rgba(red, .5);
-  border-color: red;
+  background: rgba(#f00,0.5);
+  border-color: #f00;
 }
 
-/* Fields -- a wrapper for a lable and input */
+// - Fields, a wrapper for a label and input
 
 .form-field {
 
 }
 
-/* Labels */
+// - Labels
 
 // <label class="form-label">
 //   <div class="form-label-text">Label</div>
@@ -37,7 +39,7 @@
   display: inline-block;
 }
 
-/* Inputs */
+// - Inputs
 
 // text, email, password, search, telephone, tel, number, textarea, select
 .form-input {
@@ -48,7 +50,7 @@
   box-sizing: border-box;
 
   &::placeholder {
-    opacity: .8;
+    opacity: 0.8;
   }
 
   &:not([type="checkbox"]):not([type="radio"]) {
@@ -68,8 +70,8 @@
   .form-label-text {
     display: inline-block;
     margin-right: 5px;
-    vertical-align: middle;
     font-weight: normal;
+    vertical-align: middle;
   }
 
   .form-input {

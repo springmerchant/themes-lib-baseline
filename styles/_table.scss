@@ -2,24 +2,24 @@ table {
   margin: 1em 0;
   background: transparent;
   border: 1px solid;
-  border-color: inherit;
-  border-top: none;
   border-collapse: separate;
+  border-top: 0;
+  border-color: inherit;
 
   &.table-clean {
-    border: none;
+    border: 0;
     border-radius: 0;
   }
 }
 
 td,
 th {
+  padding: 20px;
   border-top: 1px solid;
   border-top-color: inherit;
-  padding: 20px;
 
   .table-clean & {
-    border: none;
+    border: 0;
   }
 }
 
@@ -32,6 +32,6 @@ td {
   border-left-color: inherit;
 
   &:first-child {
-    border-left: none;
+    border-left: 0;
   }
 }
