@@ -49,11 +49,11 @@
   border-radius: 0;
   box-sizing: border-box;
 
-  &::placeholder {
-    opacity: 0.8;
-  }
+  &::placeholder { opacity: 0.8; }
+}
 
-  &:not([type="checkbox"]):not([type="radio"]) {
+#{$all-text-inputs} {
+  &.form-input {
     -webkit-appearance: none;
   }
 }

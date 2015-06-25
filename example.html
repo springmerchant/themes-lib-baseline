@@ -91,8 +91,9 @@ pre {
   box-sizing: border-box; }
   .form-input::placeholder {
     opacity: 0.8; }
-  .form-input:not([type="checkbox"]):not([type="radio"]) {
-    -webkit-appearance: none; }
+
+input[type="color"].form-input, input[type="date"].form-input, input[type="datetime"].form-input, input[type="datetime-local"].form-input, input[type="email"].form-input, input[type="month"].form-input, input[type="number"].form-input, input[type="password"].form-input, input[type="search"].form-input, input[type="tel"].form-input, input[type="text"].form-input, input[type="time"].form-input, input[type="url"].form-input, input[type="week"].form-input, input:not([type]).form-input, textarea.form-input {
+  -webkit-appearance: none; }
 
 .form-inline .form-label,
 .form-inline .form-label-text {
