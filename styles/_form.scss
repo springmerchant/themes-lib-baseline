@@ -35,7 +35,8 @@
   display: block;
 }
 
-.form-label-text {
+.form-label-text,
+.form-label-text-inline {
   display: inline-block;
 }
 
@@ -66,11 +67,8 @@
 //   </label>
 // </div>
 .form-inline {
-  .form-label,
   .form-label-text {
     display: inline-block;
-    margin-right: 5px;
-    font-weight: normal;
     vertical-align: middle;
   }
 
