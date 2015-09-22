@@ -7,7 +7,7 @@
   border-radius: 0;
   -webkit-appearance: none;
 
-  & ~ & {
+  & + & {
     margin-left: 5px;
   }
 }
