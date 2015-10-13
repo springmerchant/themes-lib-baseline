@@ -85,5 +85,10 @@ pre {
 }
 
 .show-for-sr {
-  @extend %show-for-sr;
+  // scss-lint:disable ImportantRule
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 }
