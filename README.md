@@ -20,6 +20,18 @@ You can check which version you have installed with `jspm inspect`.
 
 It is recommended to import `normalize` before `baseline`.
 
+Note: Can also be installed using npm
+
+```
+npm install git+ssh://git@bitbucket.org/pixelunion/bc-baseline.git
+```
+
+Import:
+
+```
+@import "../../node_modules/bc-baseline/baseline";
+```
+
 ## Development
 
 Use [scss-lint](https://github.com/brigade/scss-lint) to check for errors before commiting.
