@@ -23,7 +23,7 @@ It is recommended to import `normalize` before `baseline`.
 Note: Can also be installed using npm
 
 ```
-npm install git+ssh://git@bitbucket.org/pixelunion/bc-baseline.git --save-dev
+npm install git+ssh://git@bitbucket.org/pixelunion/bc-baseline.git --save
 ```
 
 Import:
