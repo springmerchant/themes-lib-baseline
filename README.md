@@ -5,7 +5,7 @@ A simple style library for Bigcommerce themes.
 ## Installation
 
 ```
-jspm install --save bc-baseline=bitbucket:pixelunion/bc-baseline
+npm i --save github:pixelunion/bc-baseline
 ```
 
 ## Usage
@@ -13,24 +13,10 @@ jspm install --save bc-baseline=bitbucket:pixelunion/bc-baseline
 You can now import the baseline stylesheet:
 
 ```
-@import "../jspm_packages/bitbucket/pixelunion/bc-baseline@{version-number-here}/baseline";
-```
-
-You can check which version you have installed with `jspm inspect`.
+@import "../../node_modules/bc-baseline/baseline";
+``
 
 It is recommended to import `normalize` before `baseline`.
-
-Note: Can also be installed using npm
-
-```
-npm install git+ssh://git@bitbucket.org/pixelunion/bc-baseline.git --save
-```
-
-Import:
-
-```
-@import "../../node_modules/bc-baseline/baseline";
-```
 
 ## Development
 
